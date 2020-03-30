@@ -3,45 +3,56 @@
     <div class="container-login100">
       <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
         <form class="login100-form validate-form">
-          <img class="login100-form-title p-b-33" src="https://raw.githubusercontent.com/Paul-HIT/my-pictures/master/cmf/cmb-logo.png"  style="display: table; margin: 0 auto;" />
+          <img class="login100-form-title p-b-33" src="@/assets/images/cmb-logo.png"  style="display: table; margin: 0 auto;" />
 
           <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-            <input class="input100" type="text" name="email" placeholder="手机号" v-model="phoneNumber"/>
+            <input class="input100" type="text" name="email" :placeholder="$t('view.phone')" v-model="phoneNumber"/>
             <span class="focus-input100-1"></span>
             <span class="focus-input100-2"></span>
           </div>
 
           <div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
-            <input class="input100" type="password" name="pass" placeholder="密    码" v-model="password"/>
+            <input class="input100" type="password" name="pass" :placeholder="$t('view.password')" v-model="password"/>
             <span class="focus-input100-1"></span>
             <span class="focus-input100-2"></span>
           </div>
 
           <div class="container-login100-form-btn m-t-20" @click.prevent="handleSubmit">
             <button class="login100-form-btn" style="background-color: #c70102">
-              立 即 登 录
+              {{ $t('view.login') }}
             </button>
           </div>
 
           <div class="text-center p-t-45 p-b-4">
             <span class="txt1">
-              忘记&nbsp;
+              {{ $t('view.forgetPasswordText') }}&nbsp;
             </span>
 
             <a href="#" class="txt2 hov1" style="color: #c70102">
-              用户名 / 密码?
+              {{ $t('view.phone') }} / {{ $t('view.password') }}?
             </a>
           </div>
 
           <div class="text-center">
             <span class="txt1">
-              还没有账号？&nbsp;
+              {{ $t('view.notRegister') }}&nbsp;
             </span>
 
             <a href="#" class="txt2 hov1" style="color: #c70102">
-              立即注册
+              {{ $t('view.register') }}
             </a>
           </div>
+
+          <div class="text-center" style="margin-top: 20px;">
+            <a href="javascript:void(0)" style="color: #c70102"  @click="tabCn">
+              切换到中文&nbsp;
+            </a>
+
+            <a href="javascript:void(0)" style="color: #c70102" @click="tabEn">
+              Use English
+            </a>
+          </div>
+
         </form>
       </div>
     </div>
@@ -66,12 +77,19 @@ export default {
     }
   },
   methods: {
+    tabEn () {
+      console.log('To English')
+      this.$i18n.locale = 'en_US'
+    },
+    tabCn () {
+      console.log('To Chinese')
+      this.$i18n.locale = 'zh_CN'
+    },
     handleSubmit () {
       console.log('submmit button is pressed: ' + this.phoneNumber + ' ' + this.password)
-      /* if (window.isElectron) {
-        // window.ipcRenderrer.send('reloadUrl')
-        // window.ipcRenderrer.on('pong', (event, msg) => console.log(msg) )
-      } */
+
+      const { ipcRenderer } = require('electron')
+      ipcRenderer.send('reloadUrl', this.phoneNumber, this.password)
     }
   },
   components: {}

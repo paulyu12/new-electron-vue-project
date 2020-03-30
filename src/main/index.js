@@ -1,4 +1,5 @@
 import { app, BrowserWindow, globalShortcut, ipcMain } from 'electron'
+
 // eslint-disable-next-line no-unused-expressions
 'use strict'
 // const path = require('path')
@@ -33,7 +34,12 @@ function createWindow () {
     transparent: false,
     title: '招商银行企业银行',
     autoHideMenuBar: true,
-    center: true
+    center: true,
+    webPreferences: {
+      // preload: path.join(__dirname, 'preload.js')
+      // nodeIntegration: false
+      // preload: path.join(__dirname, 'preload.js')
+    }
   })
 
   // console.log(path.join(__dirname, 'preload.js'))
@@ -49,9 +55,11 @@ function createWindow () {
     console.log('registration failed')
   }
 
-  const ret2 = globalShortcut.register('CommandOrControl+M', () => {
-    console.log('CommandOrControl+M is pressed')
-    mainWindow.webContents.openDevTools()
+  const ret2 = globalShortcut.register('CommandOrControl+B', () => {
+    console.log('CommandOrControl+B is pressed')
+    if (mainWindow.webContents.canGoBack()) {
+      mainWindow.webContents.goBack()
+    }
   })
   if (!ret2) {
     console.log('registration failed')
@@ -59,6 +67,26 @@ function createWindow () {
 
   mainWindow.on('closed', () => {
     mainWindow = null
+  })
+
+  mainWindow.on('closed', function () {
+    // Dereference the window object, usually you would store windows
+    // in an array if your app supports multi windows, this is the time
+    // when you should delete the corresponding element.
+    mainWindow = null
+  })
+
+  mainWindow.webContents.on('new-window', (event, url, frameName, disposition, options) => {
+    event.preventDefault()
+    const win = new BrowserWindow({
+      webContents: options.webContents, // use existing webContents if provided
+      show: false
+    })
+    win.once('ready-to-show', () => win.show())
+    if (!options.webContents) {
+      win.loadURL(url) // existing webContents will be navigated automatically
+    }
+    event.newGuest = win
   })
 }
 
@@ -76,9 +104,10 @@ app.on('activate', () => {
   }
 })
 
-ipcMain.on('reloadUrl', function () {
+ipcMain.on('reloadUrl', function (event, username, password) {
   // console.log(mainWindow.webContents);
-  mainWindow.webContents.loadURL('http://www.cmbchina.com/')
+  console.log('Username: ' + username + ', Password: ' + password)
+  mainWindow.webContents.loadURL('http://english.cmbchina.com/')
 })
 
 /**
