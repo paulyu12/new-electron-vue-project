@@ -83,6 +83,9 @@ export default {
     },
     tabCn () {
       console.log('To Chinese')
+      if (window.isElectron === true) {
+        console.log('isElectron')
+      }
       this.$i18n.locale = 'zh_CN'
     },
     handleSubmit () {

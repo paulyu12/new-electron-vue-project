@@ -1,9 +1,5 @@
-const { ipcRenderer } = require('electron')
-function init () {
-  // add global variables to your web page
-  window.isElectron = true
-  window.ipcRenderer = ipcRenderer
-}
+
+import { ipcRenderer } from 'electron'
 
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector, text) => {
@@ -14,7 +10,12 @@ window.addEventListener('DOMContentLoaded', () => {
   for (const type of ['chrome', 'node', 'electron']) {
     replaceText(`${type}-version`, process.versions[type])
   }
-
-  init()
-  console.log('preload.js has loaded.')
 })
+
+function init () {
+  // add global variables to your web page
+  window.isElectron = true
+  window.ipcRenderer = ipcRenderer
+}
+
+init()

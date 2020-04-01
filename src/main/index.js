@@ -2,7 +2,8 @@ import { app, BrowserWindow, globalShortcut, ipcMain } from 'electron'
 
 // eslint-disable-next-line no-unused-expressions
 'use strict'
-// const path = require('path')
+const path = require('path')
+const log = require('electron-log')
 
 // if (require('electron-squirrel-startup')) app.quit()
 // process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'
@@ -36,11 +37,13 @@ function createWindow () {
     autoHideMenuBar: true,
     center: true,
     webPreferences: {
-      // preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js')
       // nodeIntegration: false
       // preload: path.join(__dirname, 'preload.js')
     }
   })
+
+  log.info('New window created.')
 
   // console.log(path.join(__dirname, 'preload.js'))
 
@@ -64,6 +67,8 @@ function createWindow () {
   if (!ret2) {
     console.log('registration failed')
   }
+
+  log.info('Shortcut registered.')
 
   mainWindow.on('closed', () => {
     mainWindow = null
