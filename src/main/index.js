@@ -5,6 +5,14 @@ import { app, BrowserWindow, globalShortcut, ipcMain } from 'electron'
 const path = require('path')
 const log = require('electron-log')
 
+log.transports.file.file = './main.log'
+log.transports.console.level = 'warn' // error, warn, info, verbose, debug, silly
+log.transports.file.level = 'info'
+log.transports.remote.level = 'info'
+let remote = log.transports.remote
+remote.url = 'http://192.168.247.131:8080/electron'
+log.transports.remote = remote
+
 // if (require('electron-squirrel-startup')) app.quit()
 // process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'
 
@@ -43,7 +51,17 @@ function createWindow () {
     }
   })
 
-  log.info('New window created.')
+  log.info('Info: New window created.')
+  log.warn('Warn: NodeIntegration is on.')
+
+  // 异常捕获并上传
+  try {
+    mainWindow.aNotExistMethod()
+  } catch (e) {
+    log.error('Error occurred', { error: e })
+    // expected output: ReferenceError: nonExistentFunction is not defined
+    // Note - error messages will vary depending on browser
+  }
 
   // console.log(path.join(__dirname, 'preload.js'))
 
@@ -68,7 +86,7 @@ function createWindow () {
     console.log('registration failed')
   }
 
-  log.info('Shortcut registered.')
+  log.info('Info: Shortcut registered.', { error: 'Hello' })
 
   mainWindow.on('closed', () => {
     mainWindow = null
@@ -81,13 +99,25 @@ function createWindow () {
     mainWindow = null
   })
 
+  // 页面跳转控制器
+  mainWindow.webContents.on('will-navigate', function (event, url) {
+    console.log(url)
+    if (url === 'http://english.cmbchina.com/Personal') {
+      event.preventDefault()
+    }
+  })
+
+  // 页面跳转控制器
   mainWindow.webContents.on('new-window', (event, url, frameName, disposition, options) => {
     event.preventDefault()
     const win = new BrowserWindow({
       webContents: options.webContents, // use existing webContents if provided
       show: false
     })
-    win.once('ready-to-show', () => win.show())
+    // win.once('ready-to-show', () => win.show())
+    win.once('ready-to-show', function () {
+      win.show()
+    })
     if (!options.webContents) {
       win.loadURL(url) // existing webContents will be navigated automatically
     }

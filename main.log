@@ -1,0 +1,280 @@
+[2020-04-01 09:44:47.601] [info] Info: New window created.
+[2020-04-01 09:44:47.624] [warn] Warn: NodeIntegration is on.
+[2020-04-01 09:44:47.668] [info] Info: Shortcut registered.
+[2020-04-01 09:49:39.916] [info] Info: New window created.
+[2020-04-01 09:49:39.929] [warn] Warn: NodeIntegration is on.
+[2020-04-01 09:49:39.964] [info] Info: Shortcut registered.
+[2020-04-01 10:12:01.223] [info] Info: New window created.
+[2020-04-01 10:12:01.238] [warn] Warn: NodeIntegration is on.
+[2020-04-01 10:12:01.270] [info] Info: Shortcut registered.
+[2020-04-01 10:18:52.151] [info] Info: New window created.
+[2020-04-01 10:18:52.166] [warn] Warn: NodeIntegration is on.
+[2020-04-01 10:18:52.201] [info] Info: Shortcut registered.
+[2020-04-01 10:20:58.871] [info] Info: New window created.
+[2020-04-01 10:20:58.886] [warn] Warn: NodeIntegration is on.
+[2020-04-01 10:20:58.907] [info] Info: Shortcut registered.
+[2020-04-01 10:32:01.567] [info] Info: New window created.
+[2020-04-01 10:32:01.586] [warn] Warn: NodeIntegration is on.
+[2020-04-01 10:32:01.699] [info] Info: Shortcut registered.
+[2020-04-01 10:36:04.479] [info] Info: New window created.
+[2020-04-01 10:36:04.497] [warn] Warn: NodeIntegration is on.
+[2020-04-01 10:36:04.541] [info] Info: Shortcut registered.
+[2020-04-01 10:36:23.476] [info] Info: New window created.
+[2020-04-01 10:36:23.490] [warn] Warn: NodeIntegration is on.
+[2020-04-01 10:36:23.530] [info] Info: Shortcut registered.
+[2020-04-01 10:52:24.803] [info] Info: New window created.
+[2020-04-01 10:52:24.830] [warn] Warn: NodeIntegration is on.
+[2020-04-01 10:52:24.957] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 10:53:07.847] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080 { constructor: 'Error',
+  code: 'ECONNRESET',
+  stack: 'Error: socket hang up\n    at createHangUpError (_http_client.js:331:15)\n    at Socket.socketOnEnd (_http_client.js:423:23)\n    at emitNone (events.js:111:20)\n    at Socket.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1056:12)\n    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n    at process._tickCallback (internal/process/next_tick.js:180:9)' }
+[2020-04-01 10:53:07.863] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080 { constructor: 'Error',
+  code: 'ECONNRESET',
+  errno: 'ECONNRESET',
+  syscall: 'read',
+  stack: 'Error: read ECONNRESET\n    at _errnoException (util.js:1024:11)\n    at TCP.onread (net.js:615:25)' }
+[2020-04-01 10:53:07.874] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080 { constructor: 'Error',
+  code: 'ECONNRESET',
+  errno: 'ECONNRESET',
+  syscall: 'read',
+  stack: 'Error: read ECONNRESET\n    at _errnoException (util.js:1024:11)\n    at TCP.onread (net.js:615:25)' }
+[2020-04-01 10:53:25.436] [info] Info: New window created.
+[2020-04-01 10:53:25.453] [warn] Warn: NodeIntegration is on.
+[2020-04-01 10:53:25.485] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 10:55:18.421] [info] Info: New window created.
+[2020-04-01 10:55:18.450] [warn] Warn: NodeIntegration is on.
+[2020-04-01 10:55:18.495] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 10:55:53.035] [info] Info: New window created.
+[2020-04-01 10:55:53.052] [warn] Warn: NodeIntegration is on.
+[2020-04-01 10:55:53.093] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 11:06:54.381] [info] Info: New window created.
+[2020-04-01 11:06:54.401] [warn] Warn: NodeIntegration is on.
+[2020-04-01 11:06:54.436] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 11:08:13.407] [info] Info: New window created.
+[2020-04-01 11:08:13.427] [warn] Warn: NodeIntegration is on.
+[2020-04-01 11:08:13.462] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 11:08:53.718] [info] Info: New window created.
+[2020-04-01 11:08:53.735] [warn] Warn: NodeIntegration is on.
+[2020-04-01 11:08:53.765] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 11:09:09.296] [info] Info: New window created.
+[2020-04-01 11:09:09.315] [warn] Warn: NodeIntegration is on.
+[2020-04-01 11:09:09.325] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:43:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 11:09:09.371] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 11:09:44.528] [info] Info: New window created.
+[2020-04-01 11:09:44.568] [warn] Warn: NodeIntegration is on.
+[2020-04-01 11:09:44.595] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:43:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 11:09:44.650] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 11:09:59.513] [info] Info: New window created.
+[2020-04-01 11:09:59.535] [warn] Warn: NodeIntegration is on.
+[2020-04-01 11:09:59.548] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 11:09:59.583] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 14:37:50.090] [info] Info: New window created.
+[2020-04-01 14:37:50.143] [warn] Warn: NodeIntegration is on.
+[2020-04-01 14:37:50.163] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 14:37:50.216] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 14:38:57.378] [info] Info: New window created.
+[2020-04-01 14:38:57.400] [warn] Warn: NodeIntegration is on.
+[2020-04-01 14:38:57.418] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 14:38:57.452] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 14:48:30.786] [info] Info: New window created.
+[2020-04-01 14:48:30.805] [warn] Warn: NodeIntegration is on.
+[2020-04-01 14:48:30.820] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 14:48:30.861] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 14:48:53.226] [info] Info: New window created.
+[2020-04-01 14:48:53.250] [warn] Warn: NodeIntegration is on.
+[2020-04-01 14:48:53.264] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 14:48:53.315] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 14:49:03.709] [info] Info: New window created.
+[2020-04-01 14:49:03.729] [warn] Warn: NodeIntegration is on.
+[2020-04-01 14:49:03.743] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 14:49:03.783] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 14:51:37.217] [info] Info: New window created.
+[2020-04-01 14:51:37.251] [warn] Warn: NodeIntegration is on.
+[2020-04-01 14:51:37.277] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 14:51:37.340] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 14:51:51.424] [info] Info: New window created.
+[2020-04-01 14:51:51.446] [warn] Warn: NodeIntegration is on.
+[2020-04-01 14:51:51.460] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 14:51:51.503] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 14:52:17.200] [info] Info: New window created.
+[2020-04-01 14:52:17.221] [warn] Warn: NodeIntegration is on.
+[2020-04-01 14:52:17.237] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 14:52:17.283] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 15:18:25.871] [info] Info: New window created.
+[2020-04-01 15:18:25.906] [warn] Warn: NodeIntegration is on.
+[2020-04-01 15:18:25.924] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 15:18:25.987] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 15:18:56.550] [info] Info: New window created.
+[2020-04-01 15:18:56.571] [warn] Warn: NodeIntegration is on.
+[2020-04-01 15:18:56.582] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 15:18:56.623] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 15:22:07.843] [info] Info: New window created.
+[2020-04-01 15:22:07.871] [warn] Warn: NodeIntegration is on.
+[2020-04-01 15:22:07.885] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 15:22:07.917] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 15:22:29.541] [info] Info: New window created.
+[2020-04-01 15:22:29.560] [warn] Warn: NodeIntegration is on.
+[2020-04-01 15:22:29.571] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 15:22:29.605] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 15:22:38.457] [info] Info: New window created.
+[2020-04-01 15:22:38.476] [warn] Warn: NodeIntegration is on.
+[2020-04-01 15:22:38.489] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 15:22:38.523] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 15:23:10.720] [info] Info: New window created.
+[2020-04-01 15:23:10.741] [warn] Warn: NodeIntegration is on.
+[2020-04-01 15:23:10.752] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 15:23:10.789] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 15:23:46.853] [info] Info: New window created.
+[2020-04-01 15:23:46.871] [warn] Warn: NodeIntegration is on.
+[2020-04-01 15:23:46.883] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 15:23:46.915] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 15:24:31.499] [info] Info: New window created.
+[2020-04-01 15:24:31.521] [warn] Warn: NodeIntegration is on.
+[2020-04-01 15:24:31.536] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 15:24:31.580] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-01 15:25:11.673] [info] Info: New window created.
+[2020-04-01 15:25:11.691] [warn] Warn: NodeIntegration is on.
+[2020-04-01 15:25:11.703] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-01 15:25:11.741] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-03 20:15:35.727] [info] Info: New window created.
+[2020-04-03 20:15:35.748] [warn] Warn: NodeIntegration is on.
+[2020-04-03 20:15:35.756] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-03 20:15:35.810] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-03 20:15:56.833] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-03 20:15:56.844] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-03 20:15:56.852] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-03 20:15:56.861] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-04 10:31:40.546] [info] Info: New window created.
+[2020-04-04 10:31:40.587] [warn] Warn: NodeIntegration is on.
+[2020-04-04 10:31:40.609] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-04 10:31:40.690] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-04 10:32:01.721] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-04 10:32:01.745] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-04 10:32:01.755] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-04 10:32:01.777] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-04 10:59:49.844] [info] Info: New window created.
+[2020-04-04 10:59:49.961] [warn] Warn: NodeIntegration is on.
+[2020-04-04 10:59:50.003] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-04 10:59:50.135] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-04 11:00:11.210] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-04 11:00:11.228] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-04 11:00:11.249] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-04 11:00:11.259] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
