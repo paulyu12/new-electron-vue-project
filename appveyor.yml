@@ -8,6 +8,10 @@ image: Visual Studio 2017
 platform:
   - x64
 
+environment:
+  my_variable:
+    secure: kyRiPIs9E9PRa13B/o3GFW1qmf4kOVnSdsW3+wWmbfTOWPsG3nIgFbF8SCRKWXPl
+
 cache:
   - node_modules
   - '%APPDATA%\npm-cache'
@@ -18,7 +22,7 @@ init:
   - git config --global core.autocrlf input
 
 install:
-  - ps: Install-Product node 8 x64
+  - ps: Install-Product node 10 x64
   - git reset --hard HEAD
   - yarn
   - node --version

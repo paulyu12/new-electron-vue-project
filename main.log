@@ -278,3 +278,101 @@
   address: '192.168.247.131',
   port: 8080,
   stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-05 10:34:08.036] [info] Info: New window created.
+[2020-04-05 10:34:08.069] [warn] Warn: NodeIntegration is on.
+[2020-04-05 10:34:08.100] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:44:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-05 10:34:08.220] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-05 10:34:29.255] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-05 10:34:29.309] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-05 10:34:29.336] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-05 10:34:29.419] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-05 10:36:05.745] [info] Info: New window created.
+[2020-04-05 10:36:05.765] [warn] Warn: NodeIntegration is on.
+[2020-04-05 10:36:05.774] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:49:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-05 10:36:05.847] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-05 10:36:21.864] [info] Info: New window created.
+[2020-04-05 10:36:21.889] [warn] Warn: NodeIntegration is on.
+[2020-04-05 10:36:21.899] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:49:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-05 10:36:21.927] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-05 10:36:38.317] [info] Info: New window created.
+[2020-04-05 10:36:38.344] [warn] Warn: NodeIntegration is on.
+[2020-04-05 10:36:38.357] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:49:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-05 10:36:38.395] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-05 10:38:30.902] [info] Info: New window created.
+[2020-04-05 10:38:30.928] [warn] Warn: NodeIntegration is on.
+[2020-04-05 10:38:30.939] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:50:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-05 10:38:30.981] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-05 10:38:52.003] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-05 10:38:52.017] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-05 10:38:52.027] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-05 10:38:52.039] [{level}] electron-log.transports.remote: cannot send HTTP request to http://192.168.247.131:8080/electron { constructor: 'Error',
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '192.168.247.131',
+  port: 8080,
+  stack: 'Error: connect ETIMEDOUT 192.168.247.131:8080\n    at Object._errnoException (util.js:1024:11)\n    at _exceptionWithHostPort (util.js:1046:20)\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1182:14)' }
+[2020-04-05 10:39:29.102] [info] Info: New window created.
+[2020-04-05 10:39:29.120] [warn] Warn: NodeIntegration is on.
+[2020-04-05 10:39:29.139] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:49:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-05 10:39:29.205] [info] Info: Shortcut registered. { error: 'Hello' }
+[2020-04-05 10:39:51.714] [info] Info: New window created.
+[2020-04-05 10:39:51.780] [warn] Warn: NodeIntegration is on.
+[2020-04-05 10:39:51.810] [error] Error occurred { error: 
+   { constructor: 'TypeError',
+     stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n    at App.createWindow (webpack:///./src/main/index.js?:49:16)\n    at emitTwo (events.js:131:20)\n    at App.emit (events.js:214:7)' } }
+[2020-04-05 10:39:51.905] [info] Info: Shortcut registered. { error: 'Hello' }

@@ -16,11 +16,12 @@
     "pack": "npm run pack:main && npm run pack:renderer",
     "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
-    "postinstall": "npm run lint:fix"
+    "postinstall": "electron-builder install-app-deps",
+    "dist": "electron-builder --publish onTagOrDraft"
   },
   "build": {
     "productName": "new-electron-vue-project",
-    "appId": "com.example.yourapp",
+    "appId": "com.paulyu.electron-vue-demo",
     "directories": {
       "output": "build"
     },
@@ -43,7 +44,8 @@
       ]
     },
     "mac": {
-      "icon": "build/icons/icon.icns"
+      "icon": "build/icons/icon.icns",
+      "category": "public.app-category.utilities"
     },
     "win": {
       "icon": "build/icons/icon.ico"

@@ -44,11 +44,17 @@ function createWindow () {
     title: '招商银行企业银行',
     autoHideMenuBar: true,
     center: true,
+    // show: false,
+    // backgroundColor: '#FFFFFF',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
       // nodeIntegration: false
       // preload: path.join(__dirname, 'preload.js')
     }
+  })
+
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show()
   })
 
   log.info('Info: New window created.')
