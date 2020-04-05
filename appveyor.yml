@@ -9,7 +9,7 @@ platform:
   - x64
 
 environment:
-  my_variable:
+  GK_TOKEN:
     secure: kyRiPIs9E9PRa13B/o3GFW1qmf4kOVnSdsW3+wWmbfTOWPsG3nIgFbF8SCRKWXPl
 
 cache:
