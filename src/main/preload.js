@@ -1,21 +1,24 @@
+// const { ipcRenderer } = require('electron')
 
-import { ipcRenderer } from 'electron'
+// function init () {
+//   // add global variables to your web page
+//   window.isElectron = true
+//   window.ipcRenderer = ipcRenderer
+// }
 
-window.addEventListener('DOMContentLoaded', () => {
-  const replaceText = (selector, text) => {
-    const element = document.getElementById(selector)
-    if (element) element.innerText = text
-  }
+// init()
 
-  for (const type of ['chrome', 'node', 'electron']) {
-    replaceText(`${type}-version`, process.versions[type])
-  }
-})
+// window.addEventListener('DOMNodeInserted', () => {
+//   init()
+// })
 
-function init () {
-  // add global variables to your web page
-  window.isElectron = true
-  window.ipcRenderer = ipcRenderer
-}
+// window.addEventListener('DOMContentLoaded', () => {
+//   const replaceText = (selector, text) => {
+//     const element = document.getElementById(selector)
+//     if (element) element.innerText = text
+//   }
 
-init()
+//   for (const type of ['chrome', 'node', 'electron']) {
+//     replaceText(`${type}-version`, process.versions[type])
+//   }
+// })

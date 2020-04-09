@@ -93,6 +93,9 @@ export default {
 
       const { ipcRenderer } = require('electron')
       ipcRenderer.send('reloadUrl', this.phoneNumber, this.password)
+      // if (window.isElectron) {
+      //   window.ipcRenderer.send('reloadUrl', this.phoneNumber, this.password)
+      // }
     }
   },
   components: {}

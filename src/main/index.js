@@ -1,4 +1,4 @@
-import { app, BrowserWindow, globalShortcut, ipcMain } from 'electron'
+import { app, BrowserWindow, globalShortcut, ipcMain, shell } from 'electron'
 
 // eslint-disable-next-line no-unused-expressions
 'use strict'
@@ -47,8 +47,8 @@ function createWindow () {
     // show: false,
     // backgroundColor: '#FFFFFF',
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
-      // nodeIntegration: false
+      preload: path.resolve(__dirname, 'preload.js'),
+      nodeIntegration: true
       // preload: path.join(__dirname, 'preload.js')
     }
   })
@@ -94,10 +94,6 @@ function createWindow () {
 
   log.info('Info: Shortcut registered.', { error: 'Hello' })
 
-  mainWindow.on('closed', () => {
-    mainWindow = null
-  })
-
   mainWindow.on('closed', function () {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
@@ -137,6 +133,15 @@ app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit()
   }
+})
+
+app.on('web-contents-created', (event, contents) => {
+  contents.on('new-window', async (event, navigationUrl) => {
+    // In this example, we'll ask the operating system
+    // to open this event's url in the default browser.
+    event.preventDefault()
+    await shell.openExternal(navigationUrl)
+  })
 })
 
 app.on('activate', () => {
