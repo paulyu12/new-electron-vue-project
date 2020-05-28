@@ -1,4 +1,4 @@
-import { app, BrowserWindow, globalShortcut, ipcMain, shell } from 'electron'
+import { app, BrowserWindow, globalShortcut, ipcMain, shell, dialog } from 'electron'
 
 // eslint-disable-next-line no-unused-expressions
 'use strict'
@@ -9,9 +9,9 @@ log.transports.file.file = './main.log'
 log.transports.console.level = 'warn' // error, warn, info, verbose, debug, silly
 log.transports.file.level = 'info'
 log.transports.remote.level = 'info'
-let remote = log.transports.remote
-remote.url = 'http://192.168.247.131:8080/electron'
-log.transports.remote = remote
+// let remote = log.transports.remote
+// remote.url = 'http://192.168.247.131:8080/electron'
+// log.transports.remote = remote
 
 // if (require('electron-squirrel-startup')) app.quit()
 // process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'
@@ -48,7 +48,8 @@ function createWindow () {
     // backgroundColor: '#FFFFFF',
     webPreferences: {
       preload: path.resolve(__dirname, 'preload.js'),
-      nodeIntegration: true
+      nodeIntegration: true,
+      webSecurity: false
       // preload: path.join(__dirname, 'preload.js')
     }
   })
@@ -151,9 +152,47 @@ app.on('activate', () => {
 })
 
 ipcMain.on('reloadUrl', function (event, username, password) {
-  // console.log(mainWindow.webContents);
+  console.log(mainWindow.webContents)
   console.log('Username: ' + username + ', Password: ' + password)
-  mainWindow.webContents.loadURL('http://english.cmbchina.com/')
+  mainWindow.webContents.loadURL('http://192.168.247.135:8080/electron', {
+    postData: [{
+      type: 'rawData',
+      bytes: Buffer.from("{a: '1'}")
+    }],
+    extraHeaders: 'Content-Type: application/json'
+  })
+  // mainWindow.webContents.loadURL('http://english.cmbchina.com/')
+})
+
+ipcMain.on('notification', function (event, message) {
+  dialog.showMessageBox({
+    type: 'info',
+    message: message,
+    buttons: ['好的']
+  })
+})
+
+// ipcMain.on('verifyOTP', function (event, username, password, otp) {
+//   // console.log(mainWindow.webContents);
+//   console.log('Username: ' + username + ', Password: ' + password + ', OTP: ' + otp)
+//   var request = require('request')
+
+//   request('http://192.168.247.130:5001/validate/check?user=' + username + '&pass=' + otp, (error, response, body) => {
+//     console.log('Here')
+//     if (!error && response.statusCode === 200) {
+//       console.log(body)
+//     }
+//   })
+// })
+
+ipcMain.on('get-data', function (event, itemList) {
+  console.log(itemList)
+  event.reply('get-data-reply', 'this is a response')
+})
+
+ipcMain.on('get-data-sync', function (event, itemList) {
+  console.log(itemList)
+  event.returnValue = 'this is a sync response'
 })
 
 /**

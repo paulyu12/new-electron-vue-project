@@ -1,12 +1,12 @@
-// const { ipcRenderer } = require('electron')
+const { ipcRenderer } = require('electron')
 
-// function init () {
-//   // add global variables to your web page
-//   window.isElectron = true
-//   window.ipcRenderer = ipcRenderer
-// }
+function init () {
+  // add global variables to your web page
+  window.isElectron = true
+  window.ipcRenderer = ipcRenderer
+}
 
-// init()
+init()
 
 // window.addEventListener('DOMNodeInserted', () => {
 //   init()

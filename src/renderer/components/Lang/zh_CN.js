@@ -7,8 +7,9 @@
 export default {
   //页面字段
   view: {
-    "phone": "手机号",
+    "phone": "用户名 / 手机号",
     "password": "密码",
+    "otp": "动态口令",
     "login": "立 即 登 录",
     "forgetPasswordText": "忘记",
     "notRegister": "还没有账号？",

@@ -6,8 +6,9 @@
 
 export default {
   view: {
-    "phone": "Phone Number",
+    "phone": "Username / Phone",
     "password": "Password",
+    "otp": "OTP Value",
     "login": "Login",
     "forgetPasswordText": "Forget Password",
     "notRegister": "not register yet ?",
