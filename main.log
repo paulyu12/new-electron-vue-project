@@ -185,3 +185,80 @@
   }
 }
 [2020-05-28 20:01:14.103] [info] Info: Shortcut registered. { error: 'Hello' }
+[2021-07-01 19:24:39.204] [info] Info: New window created.
+[2021-07-01 19:24:39.212] [warn] Warn: NodeIntegration is on.
+[2021-07-01 19:24:39.215] [error] Error occurred {
+  error: {
+    constructor: 'TypeError',
+    stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n' +
+      '    at App.createWindow (webpack:///./src/main/index.js?:57:16)\n' +
+      '    at App.emit (events.js:215:7)'
+  }
+}
+[2021-07-01 19:24:39.247] [info] Info: Shortcut registered. { error: 'Hello' }
+[2021-07-01 19:27:34.969] [info] Info: New window created.
+[2021-07-01 19:27:34.982] [warn] Warn: NodeIntegration is on.
+[2021-07-01 19:27:34.985] [error] Error occurred {
+  error: {
+    constructor: 'TypeError',
+    stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n' +
+      '    at App.createWindow (webpack:///./src/main/index.js?:57:16)\n' +
+      '    at App.emit (events.js:215:7)'
+  }
+}
+[2021-07-01 19:27:35.018] [info] Info: Shortcut registered. { error: 'Hello' }
+[2021-07-01 19:27:54.511] [info] Info: New window created.
+[2021-07-01 19:27:54.523] [warn] Warn: NodeIntegration is on.
+[2021-07-01 19:27:54.526] [error] Error occurred {
+  error: {
+    constructor: 'TypeError',
+    stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n' +
+      '    at App.createWindow (webpack:///./src/main/index.js?:57:16)\n' +
+      '    at App.emit (events.js:215:7)'
+  }
+}
+[2021-07-01 19:27:54.555] [info] Info: Shortcut registered. { error: 'Hello' }
+[2021-07-01 19:44:47.773] [info] Info: New window created.
+[2021-07-01 19:44:47.792] [warn] Warn: NodeIntegration is on.
+[2021-07-01 19:44:47.796] [error] Error occurred {
+  error: {
+    constructor: 'TypeError',
+    stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n' +
+      '    at App.createWindow (webpack:///./src/main/index.js?:57:16)\n' +
+      '    at App.emit (events.js:215:7)'
+  }
+}
+[2021-07-01 19:44:47.819] [info] Info: Shortcut registered. { error: 'Hello' }
+[2021-07-01 19:53:26.577] [info] Info: New window created.
+[2021-07-01 19:53:26.598] [warn] Warn: NodeIntegration is on.
+[2021-07-01 19:53:26.602] [error] Error occurred {
+  error: {
+    constructor: 'TypeError',
+    stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n' +
+      '    at App.createWindow (webpack:///./src/main/index.js?:57:16)\n' +
+      '    at App.emit (events.js:215:7)'
+  }
+}
+[2021-07-01 19:53:26.634] [info] Info: Shortcut registered. { error: 'Hello' }
+[2021-07-01 19:55:50.156] [info] Info: New window created.
+[2021-07-01 19:55:50.173] [warn] Warn: NodeIntegration is on.
+[2021-07-01 19:55:50.183] [error] Error occurred {
+  error: {
+    constructor: 'TypeError',
+    stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n' +
+      '    at App.createWindow (webpack:///./src/main/index.js?:57:16)\n' +
+      '    at App.emit (events.js:215:7)'
+  }
+}
+[2021-07-01 19:55:50.223] [info] Info: Shortcut registered. { error: 'Hello' }
+[2021-07-01 19:56:30.114] [info] Info: New window created.
+[2021-07-01 19:56:30.134] [warn] Warn: NodeIntegration is on.
+[2021-07-01 19:56:30.140] [error] Error occurred {
+  error: {
+    constructor: 'TypeError',
+    stack: 'TypeError: mainWindow.aNotExistMethod is not a function\n' +
+      '    at App.createWindow (webpack:///./src/main/index.js?:57:16)\n' +
+      '    at App.emit (events.js:215:7)'
+  }
+}
+[2021-07-01 19:56:30.176] [info] Info: Shortcut registered. { error: 'Hello' }
